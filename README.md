@@ -4,6 +4,14 @@
 This project implements a simple ALU in verilog, designed to be tested on a Basys 3 FPGA board. The ALU supports basic arithmetic and logical operations, with additional functionality for bit shifting and two's complement conversion to signed binary.
 
 ![Basys3 image with i/o highlighted](https://github.com/NicolasStigler/ALU/blob/main/basys.png?raw=true)
+Notation Prefix:
+- C = ALUControl Bits
+- S = bShift Bits
+- LorR = Left or Right Switch
+- A = A Bits
+- B = B Bits
+- R = Result Bits
+- F = ALUFlags Bits (neg, zero, carry, overflow)
 
 ## Features
 
@@ -33,15 +41,5 @@ The ALU generates status flags to indicate various conditions:
 ## Hardware Implementation
 
 This project is specifically designed for implementation on a **Basys 3 FPGA board**. All necessary constraints and pin mappings are included for direct deployment.
-
-# Notation Prefix
-
-C = ALUControl Bits
-S = bShift Bits
-LorR = Left or Right Switch
-A = A Bits
-B = B Bits
-R = Result Bits
-F = ALUFlags Bits (neg, zero, carry, overflow)
 
 Thanks :3 don't forget to power on the board...
